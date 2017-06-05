@@ -3,7 +3,7 @@ Zicheng Hu
 
 ## Introduction
 
-###COCONUT
+### COCONUT
 Direct comparison of different microarray cohorts is impossible due both to inherent differences in underlying microarray platform and processing (technical) batch effects. In order to make use of these data, we need to co-normalize cohorts in such a way that (1) no bias is introduced (i.e., the normalization protocol should be blind to disease state); (2) there should be no change to the distribution of a gene within a study, and (3) a gene should show the same distributions between studies after normalization.
 
 Sweeney TE et al. thus developed a modified version of the ComBat empiric Bayes normalization method (Johnson et al., Biostatistics 2007) to co-normalize control samples from different cohorts to allow for direct comparison of diseased samples from those same cohorts. We call this method COmbat CO-Normalization Using conTrols, or 'COCONUT' . COCONUT makes one strong assumption, which is that it forces controls/healthy patients from different cohorts to represent the same distribution.
