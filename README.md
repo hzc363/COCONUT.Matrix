@@ -21,6 +21,8 @@ install_github("hzc363/COCONUT.matrix")
 
 ## Example
 ```
+library("COCONUT.matrix")
+
 # load data
 data(GSEs.matrix)
 
