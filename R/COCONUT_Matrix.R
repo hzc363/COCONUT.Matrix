@@ -8,10 +8,10 @@
 COCONUT.matrix <- function (dat, batch, control, par.prior=TRUE,
                      itConv=1e-04, parallel=FALSE, mc.cores=1){
   
-  
+  batch=as.character(batch)
   ## list of only controls (everything else removed)
   check <- setdiff(unique(batch), unique(batch[control==1]))
-  if(!all(check)){
+  if(length(check)>1){
     stop(paste("batch with <1 control:",check))
   }
   
